@@ -10,4 +10,7 @@ Jinja2
 Werkzeug
 python-dotenv
 pillow              
-requests             
+requests
+flask-bcrypt           
+flask-mail
+flask-migrate
