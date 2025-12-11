@@ -17,6 +17,12 @@
       <p class="article-content">{{ post.content }}</p>
     </div>
   </article>
+  <article class="post">
+    <h1>{{ post.title }}</h1>
+    <div class="post-body">
+        {{ post.content | replace('\n', '<br>') | safe }}
+    </div>
+  </article>
   <!-- Modal -->
   <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
